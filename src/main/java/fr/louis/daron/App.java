@@ -20,6 +20,7 @@ public class App {
             }*/
 
             nbreDeCasesRest = jouerPartie(generateur, caseEndroit, nbreDeCasesRest);
+            nbreDexe +=1;
 
             /*if (nbreDeCasesRest != 0){
                 System.out.println("Vous avez perdu ! ");
@@ -48,10 +49,8 @@ public class App {
     public static boolean resultat(int reste, int nbreExec, boolean res){
         if (reste != 0){
             System.out.println("Vous avez perdu ! ");
-            nbreExec += 1;
         }else{
             System.err.println("Vous avez gagné ! ");
-            nbreExec += 1;
             res = true;
             System.out.println("Vous avez effectué "+ nbreExec + " execution(s) avant de gagner");
         }
